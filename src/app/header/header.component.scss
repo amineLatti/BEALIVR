@@ -1,0 +1,173 @@
+
+.header{
+	position: absolute;
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+
+	&-logo{
+		width: 138px;
+		height: 23px;
+		z-index: 3;
+	}
+
+	&-links{
+		ul{
+			display: flex;
+			align-items: center;
+			li{
+				margin: 0 25px;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 15px;
+				font-size: 13px;
+				color: white;
+				z-index: 999;
+
+				&.active{
+					color: #E20036;
+				}
+
+				i{
+					&.icon {
+						display: inline-block;
+					}
+				
+					&.icon-small {
+						width: 20px;
+						height: 20px;
+					}
+				
+					&.icon-search {
+						background-image: url('../../assets/images/loupe.svg');
+					}
+				
+					&.icon-account {
+						background-image: url('../../assets/images/Account.svg');
+					}
+
+					&.icon-bag {
+						background-image: url('../../assets/images/bag.svg');
+					}			
+					
+					span{
+						&.item-count{
+							position: relative;
+							left: 70%;
+							top: 50%;
+							font-family: 'Roboto Condensed', sans-serif;
+							font-style: normal;
+							font-weight: 700;
+							font-size: 10px;
+							background-color: #E20036;
+							padding: 1px 4px;
+							border-radius: 100px;
+						}
+
+					}
+				}
+
+				button{
+					color: #fff;
+					text-align: center;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-style: normal;
+					font-size: 11px;
+					letter-spacing: 0.05em;
+					padding: 8px 20px;
+					background: #E20036;
+					border-radius: 100px;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	.header{
+		&-links{
+			ul{
+				li{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/*
+//align every items in the header to the right
+.header {
+	position: absolute;
+	grid-template-columns: 1fr 1fr;
+	background-color: #040404;
+	width: 100%;
+	height: 100%;
+	&-logo {
+		margin-left: 70px;
+		margin-top: 20px;
+		img{
+			width: 138px;
+			height: 23px;
+		}
+	}
+	&--links{
+		height: 100%;
+		width: 100%;
+		li{
+			display: inline-block;
+			justify-content: flex-end;
+			a {
+				display: block;
+				margin-top: 20px;
+				margin-right: 30px;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 15px;
+				font-size: 13px;
+				color: white;
+			}
+			.button{
+				position: absolute;
+				top: 13px;
+				right: 70px;
+				color: #fff;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-style: normal;
+				font-size: 11px;
+				padding: 5px 20px;
+				background: #E20036;
+				border-radius: 100px;
+
+			}
+	
+			i{
+				margin-right: 30px;
+				align-items: center;
+				color: white;
+				margin
+				&.loupe{
+					background-image: url('../../assets/images/loupe.svg');
+				}
+				&.Account{
+					background-image: url('../../assets/images/Account.svg');
+				}
+				&.bag{
+					background-image: url('../../assets/images/bag.svg');
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+*/
